@@ -50,7 +50,7 @@ export function Boldo() {
             title="left-content"
             className="flex flex-col items-start mt-14 mr-36 w-[567px] "
           >
-            <h1>Save time by building fast with Boldo Template</h1>
+            <h1>Vite & Tailwind Template - Experimental</h1>
             <p>
               Funding handshake buyer business-to-business metrics iPad
               partnership. First mover advantage innovator success deployment
