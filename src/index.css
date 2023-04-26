@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+}
+
+h1,h2,h3,h4,h5,p{
+  font-family: Manrope;
+
+
+}
+h1 {
+  font-size: 48px;
+  line-height: 72px;
+}
+
+h2{
+  font-size: 36px;
+  line-height: 56px;
+
+}
+
+
+@layer components{
+  .full-container{
+    @apply h-full w-full bg-total-white block font-sans
+
+  }
+
+  .base-container{
+    @apply flex items-center justify-center
+
+  }
+
+  .base-button{
+    @apply rounded-full font-semibold  transition duration-100 ease-out hover:brightness-75
+
+  }
+
+  .transition-b-button{
+    @apply after:block 
+    after:content-[''] after:border-darker-blue after:border-b-4 after:scale-x-0 after:transition after:duration-200 after:ease-out  hover:after:scale-x-100 after:mt-2
+
+  }
+
+  .margin-center{
+    @apply my-0 mx-auto
+
+  }
+
+  .anchor{
+    @apply hover:underline hover:cursor-pointer font-sans font-semibold text-base
+
+  }
+
+
+  
+
+
+
+}
+
+
+
+
+/* 
+      Breakpoint prefix: @media(min-width: x px){...} 
+      sm -  640px,
+      md -  768px,
+      ls -  1024px,
+      xl -  1280px,
+      2xl - 1536px
+      custom style value -> "top-[10px]"
+
+*/
